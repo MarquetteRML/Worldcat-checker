@@ -1,0 +1,22 @@
+#clearData {
+	float: right;
+	margin: 10px 15px;
+	background: rgb(202, 60, 60);
+	color: white;
+	border-radius: 4px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	padding: .5em 1em;
+	border: 0 rgba(0,0,0,0);
+	display: inline-block;
+	zoom: 1;
+	line-height: normal;
+	white-space: nowrap;
+	vertical-align: baseline;
+	text-align: center;
+	cursor: pointer;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

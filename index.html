@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>OCLC Lookup</title>
+	<link rel="stylesheet" href="css/styles.css?v=1.0">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+
+<button id='clearData'>Clear old Searchs</button>
+
+<form action="/" id="csvform" method='post'>
+  <label for="csv">CSV List of Call # and OCLC #</label><br />
+	<textarea cols="40" rows="5" name="csv" id='csvList'></textarea>
+	<br />
+  <input type="submit">
+</form>
+
+<form action='/' id='selectNames' method="post">
+	<p>
+		<label for="oclcName">OCLC Number</label><br />
+		<select name='oclcName' id='oclcName'></select>
+	</p>
+	<p>
+		<label for="callName">Call Number</label><br />
+		<select name='callName' id='callName'></select>
+	</p>
+	<input type="submit">
+</form>
+<button id='showResults'>Get Saved Results</button>
+<a href='' id='download'>Download Results</a>
+
+	<p id='loading'><span id='load-at'></span> of <span id="load-total"></span> loaded</p>
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/lib/jquery.csv.js"></script>
+	<script src="js/lib/jquery.indexeddb.js"></script>
+	<script src="js/csvsubmit.js"></script>
+</body>
+</html>
